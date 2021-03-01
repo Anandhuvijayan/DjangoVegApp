@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Blog(models.Model):
     blog_heading = models.CharField(max_length=100)
     blog_text = models.CharField(max_length=200)
