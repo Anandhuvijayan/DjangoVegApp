@@ -45,20 +45,9 @@ class ContactView(generic.ListView):
 
 
 
-# def contactform(request):
-#     form = MyForm()
-
-#     return render(request, 'contactform.html', {'form':form});
-
-
-# class ResponseForm(generic.ListView):
-#     template_name = 'responseform.html'
-    
-#     def get_queryset(self):
-#         pass
 
 def responseform(request):
- #if form is submitted
+ 
     if request.method == 'POST':
         myForm_form = MyForm(request.POST)
         
@@ -76,12 +65,6 @@ def responseform(request):
             myForm_form.save()
 
            
-
-            # template = loader.get_template('thankyou.html')
-
-            # return HttpResponse(template.render(context, request))
-
-            
 
 
 
